@@ -29,10 +29,13 @@ const Dashboard = () => {
             Product
           </Menu.Item>
           <Menu.Item key="3" icon={<UserOutlined />}>
-            User
+            <a href="/login"> Login User </a>
+          </Menu.Item>
+          <Menu.Item key="3" icon={<UserOutlined />}>
+            <a href="/register"> Register User</a>
           </Menu.Item>
           <Menu.Item key="4" icon={<LogoutOutlined />}>
-            User
+            Logout
           </Menu.Item>
         </Menu>
       </Sider>

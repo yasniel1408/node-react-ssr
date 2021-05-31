@@ -3,8 +3,6 @@ var path = require('path');
 module.exports = {
   entry: {
     authentication: './src/views/js/pages/authentication/Authentication.js',
-    product: './src/views/js/pages/product/Product.js',
-    ecomerce: './src/views/js/pages/ecomerce/Ecomerce.js',
     dashboard: './src/views/js/pages/dashboard/Dashboard.js'
   },
   output: {
@@ -28,10 +26,6 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.json?$/,
-        loader: 'json-loader'
       },
     ],
         

@@ -1,8 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,16 +7,13 @@ import {
   Redirect,
 } from "react-router-dom";
 import Dashboard from "../pages/dashboard/Dashboard";
-import { Ecomerce } from "../pages/ecomerce/Ecomerce";
 
 function Main() {
   return (
     <Router>
       <main>
-        {/* <Nav /> */}
         <Switch>
-          <Redirect from="/" to="/ecomerce" component={List} />
-          <Route path="/ecomerce" exact component={Ecomerce} />
+          <Redirect from="/" to="/dashboard" component={List} />
           <Route path="/dashboard" exact component={Dashboard} />
         </Switch>
       </main>
